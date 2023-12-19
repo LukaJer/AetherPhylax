@@ -1,4 +1,4 @@
-22249564630388128
+22251266763240331
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61340,20 +61340,6 @@ IND_LQH3NPN100MJRL
 0
 2
 2
-Library
-Jumper_3_0805
-Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
-capacitor
-0
-3
-3
-Library
-TestPoint_2x03_P1.27mm
-surface-mounted straight pin header, 2x03, 1.27mm pitch, double rows
-Surface mounted pin header SMD 2x03 1.27mm double row
-0
-6
-6
 MEM2075_00_140_01_A
 GCT_MEM2075-00-140-01-A
 
@@ -63937,6 +63923,27 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+MyLib
+Jumper_3_0805
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor
+0
+3
+3
+MyLib
+TestPoint_2x03_1.5mm
+
+
+0
+6
+6
+MyLib
+TestPoint_2x03_P1.27mm
+surface-mounted straight pin header, 2x03, 1.27mm pitch, double rows
+Surface mounted pin header SMD 2x03 1.27mm double row
+0
+6
+6
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads

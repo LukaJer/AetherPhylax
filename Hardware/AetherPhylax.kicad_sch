@@ -271,11 +271,11 @@
         )
       )
     )
-    (symbol "Connector_Generic:Conn_02x03_Top_Bottom" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector_Generic:Conn_02x03_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 1.27 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_02x03_Top_Bottom" (at 1.27 -5.08 0)
+      (property "Value" "Conn_02x03_Odd_Even" (at 1.27 -5.08 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -287,13 +287,13 @@
       (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, double row, 02x03, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_2x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_02x03_Top_Bottom_1_1"
+      (symbol "Conn_02x03_Odd_Even_1_1"
         (rectangle (start -1.27 -2.413) (end 0 -2.667)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -326,19 +326,19 @@
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
+        (pin passive line (at 7.62 2.54 180) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+        (pin passive line (at -5.08 0 0) (length 3.81)
           (name "Pin_3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 2.54 180) (length 3.81)
+        (pin passive line (at 7.62 0 180) (length 3.81)
           (name "Pin_4" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 0 180) (length 3.81)
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
           (name "Pin_5" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
@@ -1673,6 +1673,10 @@
     (stroke (width 0) (type default))
     (uuid 3aa40034-3607-448e-8262-6b61f577f96c)
   )
+  (wire (pts (xy 161.29 52.07) (xy 173.99 52.07))
+    (stroke (width 0) (type default))
+    (uuid 3b32c682-ef6f-4e93-8a0d-c6d2d097a6c8)
+  )
   (wire (pts (xy 99.06 34.29) (xy 99.06 35.56))
     (stroke (width 0) (type default))
     (uuid 3cd3394b-6951-4761-b150-1eae44a8f212)
@@ -2555,7 +2559,7 @@
   (symbol (lib_id "power:GND") (at 99.06 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 01698e70-abec-4b06-bd8c-49ff1bc51b21)
-    (property "Reference" "#PWR03" (at 99.06 41.91 0)
+    (property "Reference" "#PWR05" (at 99.06 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.06 39.37 0)
@@ -2571,7 +2575,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2602,7 +2606,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "R6") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2632,7 +2636,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -2707,7 +2711,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -2716,7 +2720,7 @@
   (symbol (lib_id "power:GND") (at 96.52 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17edfeed-2dc8-4b1a-8d0e-67d12d377558)
-    (property "Reference" "#PWR014" (at 96.52 100.33 0)
+    (property "Reference" "#PWR018" (at 96.52 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 96.52 97.79 0)
@@ -2732,7 +2736,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -2817,7 +2821,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -2909,7 +2913,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2940,6 +2944,36 @@
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
           (reference "#PWR01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 173.99 52.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2e2f8131-c4cd-49e1-9524-a0dde6f3ab48)
+    (property "Reference" "#PWR0118" (at 173.99 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 173.99 55.88 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 173.99 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 173.99 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 513f160d-0d19-4289-a3f6-887d236ced83))
+    (instances
+      (project "LoRaMini"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+          (reference "#PWR0118") (unit 1)
+        )
+      )
+      (project "AetherPhylax"
+        (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -3030,7 +3064,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -3092,7 +3126,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -3178,7 +3212,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -3234,7 +3268,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -3295,7 +3329,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -3304,7 +3338,7 @@
   (symbol (lib_id "Device:R_Small") (at 106.68 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6641cf0e-2923-47d3-a210-3b155a5322a8)
-    (property "Reference" "ROUT1" (at 107.95 76.2 0)
+    (property "Reference" "ROUT2" (at 107.95 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.57M" (at 107.95 78.74 0)
@@ -3321,7 +3355,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROUT1") (unit 1)
+          (reference "ROUT2") (unit 1)
         )
       )
     )
@@ -3434,7 +3468,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "R3") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3522,7 +3556,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3552,7 +3586,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -3583,7 +3617,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "R5") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3592,7 +3626,7 @@
   (symbol (lib_id "Device:R_Small") (at 86.36 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 869ab79f-bb26-49b5-8b5f-19a4fb0768c4)
-    (property "Reference" "ROK1" (at 87.63 86.36 0)
+    (property "Reference" "ROK3" (at 87.63 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.4M" (at 87.63 88.9 0)
@@ -3609,7 +3643,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROK1") (unit 1)
+          (reference "ROK3") (unit 1)
         )
       )
     )
@@ -3643,7 +3677,7 @@
   (symbol (lib_id "power:GND") (at 95.25 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 87e08ea8-edcc-4aff-8cef-1b4231d1a6a3)
-    (property "Reference" "#PWR08" (at 95.25 60.96 0)
+    (property "Reference" "#PWR011" (at 95.25 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 95.25 58.42 0)
@@ -3659,7 +3693,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3668,7 +3702,7 @@
   (symbol (lib_id "Device:R_Small") (at 96.52 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 88b7e237-67a1-4654-8db9-737d6751b992)
-    (property "Reference" "ROV2" (at 97.79 66.04 0)
+    (property "Reference" "ROV1" (at 97.79 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.49M" (at 97.79 68.58 0)
@@ -3685,7 +3719,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROV2") (unit 1)
+          (reference "ROV1") (unit 1)
         )
       )
     )
@@ -3715,7 +3749,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -3771,7 +3805,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -3908,7 +3942,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -3938,7 +3972,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3965,6 +3999,36 @@
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
           (reference "L1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_02x03_Odd_Even") (at 157.48 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a1046846-3a01-47a2-9be1-963b0348045d)
+    (property "Reference" "DEBUG1" (at 158.75 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_02x03_Odd_Even" (at 158.75 124.46 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "MyLib:TestPoint_2x03_1.5mm" (at 157.48 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 157.48 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "6" (uuid a6e0bf0b-3dfe-4e37-bb37-7dc1b9c19bdc))
+    (pin "5" (uuid 0b473f5e-6dc3-4e3f-9815-9b87a3ef3b0b))
+    (pin "4" (uuid f6b2e988-385e-4fb1-84bd-fd76dfe55895))
+    (pin "2" (uuid a8bc582c-0d0a-442b-9f3f-2e75699aaf51))
+    (pin "3" (uuid 55441bb7-7bce-48ea-a344-c23ff97bf3ce))
+    (pin "1" (uuid 3a3eea33-195f-46be-9113-4b7ba720078b))
+    (instances
+      (project "AetherPhylax"
+        (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
+          (reference "DEBUG1") (unit 1)
         )
       )
     )
@@ -4003,7 +4067,7 @@
   (symbol (lib_id "Device:R_Small") (at 96.52 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6fb38ed-2acf-4543-af9e-d67aeaa2d85e)
-    (property "Reference" "ROV1" (at 97.79 76.2 0)
+    (property "Reference" "ROV2" (at 97.79 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.42M" (at 97.79 78.74 0)
@@ -4020,7 +4084,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROV1") (unit 1)
+          (reference "ROV2") (unit 1)
         )
       )
     )
@@ -4050,7 +4114,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -4109,7 +4173,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "R4") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4139,7 +4203,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4169,42 +4233,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_02x03_Top_Bottom") (at 157.48 130.81 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bb122060-a190-49b6-8fb1-dad1d78c7025)
-    (property "Reference" "DEBUG1" (at 158.75 121.92 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_02x03_Top_Bottom" (at 158.75 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Library:TestPoint_2x03_P1.27mm" (at 157.48 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 157.48 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 330c10d3-602f-4ff0-a460-b5dd0472a878))
-    (pin "2" (uuid e6b04df4-74fd-4f4b-9efb-887a95606134))
-    (pin "3" (uuid 2f718803-3318-4a8e-b09a-cf596abb63d6))
-    (pin "4" (uuid f4dcf3b7-8024-4bf3-80ef-b008931be7f9))
-    (pin "5" (uuid f25ec989-68ce-4269-a4d2-cfee74995047))
-    (pin "6" (uuid 7d0dec6f-344b-4589-8818-f84735e0a66d))
-    (instances
-      (project "LoRaMini"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "DEBUG1") (unit 1)
-        )
-      )
-      (project "AetherPhylax"
-        (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "DEBUG1") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -4267,7 +4296,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "JP2") (unit 1)
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -4297,7 +4326,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -4336,7 +4365,7 @@
   (symbol (lib_id "Device:R_Small") (at 86.36 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8d13c8f-f832-4087-8791-982e58d20956)
-    (property "Reference" "ROK3" (at 87.63 66.04 0)
+    (property "Reference" "ROK1" (at 87.63 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.3M" (at 87.63 68.58 0)
@@ -4353,7 +4382,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROK3") (unit 1)
+          (reference "ROK1") (unit 1)
         )
       )
     )
@@ -4362,7 +4391,7 @@
   (symbol (lib_id "power:GND") (at 59.69 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dae88796-cdad-4207-b432-5f76c09bc37d)
-    (property "Reference" "#PWR011" (at 59.69 96.52 0)
+    (property "Reference" "#PWR015" (at 59.69 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 93.98 0)
@@ -4378,7 +4407,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4408,7 +4437,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -4438,7 +4467,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -4447,7 +4476,7 @@
   (symbol (lib_id "Device:R_Small") (at 106.68 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dde4f84d-16d4-473e-a499-2c6e53b11c00)
-    (property "Reference" "ROUT2" (at 107.95 66.04 0)
+    (property "Reference" "ROUT1" (at 107.95 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6.34M" (at 107.95 68.58 0)
@@ -4464,7 +4493,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "ROUT2") (unit 1)
+          (reference "ROUT1") (unit 1)
         )
       )
     )
@@ -4530,7 +4559,7 @@
   (symbol (lib_id "power:GND") (at 19.05 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4802526-23b7-43aa-b0e2-7c47e22ed10c)
-    (property "Reference" "#PWR07" (at 19.05 58.42 0)
+    (property "Reference" "#PWR09" (at 19.05 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 19.05 55.88 0)
@@ -4546,7 +4575,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -4660,7 +4689,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4669,7 +4698,7 @@
   (symbol (lib_id "power:GND") (at 41.91 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f9b65383-c6d9-47d7-acbb-8d9aeca8c533)
-    (property "Reference" "#PWR019" (at 41.91 144.78 0)
+    (property "Reference" "#PWR025" (at 41.91 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 142.24 0)
@@ -4685,7 +4714,7 @@
     (instances
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -4746,7 +4775,7 @@
       )
       (project "AetherPhylax"
         (path "/ef9e1f88-a1d3-4871-a53d-476755b1dd84"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
