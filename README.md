@@ -1,6 +1,6 @@
 # AetherPhylax 
 
-## Tiny Energy Harvesting Environementmonitor
+## Tiny Energy Harvesting Environment Monitior 
 ![image](https://github.com/LukaJer/AetherPhylax/assets/13017970/f9a967a2-f1cd-41de-9853-1784f9c7d0cf)
 
 ### Hardware Desctiption:  
